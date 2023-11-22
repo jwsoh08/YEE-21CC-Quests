@@ -1,0 +1,21 @@
+generated-with: Easy Java/Javascript Simulations, version 6.1 BETA, build 201115. Visit http://www.um.es/fem/Ejs
+title: 21CC Navigator Future Self Quiz
+logo-image: future_self_quiz/images/sjw_ejss.png
+author: JW (junwen.soh@theoptimum.net); Victoria Chanel Lee (victoriachanellee@hotmail.com)
+copyright: 
+author-image: ;
+source: future_self_quiz.ejss
+main-script: future_self_quiz_Simulation.js
+main-simulation: future_self_quiz_Simulation.xhtml
+available-languages: 
+html-contents: future_self_quiz_Contents.xhtml
+html-main: future_self_quiz.xhtml
+page-title: 21CC Navigator Future Self Quiz
+page-index: future_self_quiz_Simulation.xhtml
+resource: future_self_quiz/css/styles.css
+resource: future_self_quiz/images/sjw_ejss.png
+resource: future_self_quiz/fonts/Roboto-Regular.woff2
+resource: future_self_quiz/fonts/Dosis-Regular.woff2
+resource: future_self_quiz/fonts/Dosis-ExtraBold.woff2
+resource: future_self_quiz/fonts/Nunito-SemiBold.woff2
+resource: future_self_quiz/fonts/Nunito-Regular.woff2
