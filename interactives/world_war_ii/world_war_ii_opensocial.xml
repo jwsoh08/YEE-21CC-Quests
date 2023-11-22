@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+<ModulePrefs
+title="world_war_ii"
+author="Soh Jun Wen"
+description="This simulation has been modified from the online version of "falling bricks" game.
+
+Game Title: Find the odd rhyme and rhyming couplet Game
+https://iwant2study.org/ospsg/index.php/interactive-resources/english/literature/907-find-the-odd-rhyme-out-final"
+screenshot=""
+thumbnail="">
+<Require feature="opensocial-0.9"/>
+<Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html" href="world_war_ii_Simulation.xhtml"/>
+</Module>

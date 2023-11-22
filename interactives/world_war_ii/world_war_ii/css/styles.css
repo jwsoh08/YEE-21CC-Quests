@@ -1,0 +1,550 @@
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis-Regular.woff2");
+}
+
+/* font-weight: 700 */
+@font-face {
+  font-family: "Dosis-Bold";
+  src: url("../fonts/Dosis-Bold.woff2");
+}
+
+@font-face {
+  font-family: "Dosis-SemiBold";
+  src: url("../fonts/Dosis-SemiBold.woff2");
+}
+
+:root {
+  --primary-blue: #578FFE;
+  --primary-pink: #FF0082;
+  --cotton-candy: #F7CFE5;
+  --apricot: #F9E6E0;
+  --blush: #EEB4A3;
+  --orange: #F47D61;
+  --md-yellow: #FFD208;
+  --lg-yellow: #FDFAF1;
+  --white: #FFFFFF;
+}
+
+body {
+  background-color: white !important;
+  margin: 0;
+}
+
+/* main container for game content */
+#_topFrame {
+  container-type: inline-size;
+  container-name: sidebar;
+  /* Vertically centers the game content */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+#wrappedPanel,
+#plottingPanel {
+  height: 100%;
+}
+
+#background {
+  height: 110%;
+}
+
+#metadata {
+  display: none;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.custom-container {
+  background-color: var(--lg-yellow);
+  color: var(--primary-blue);
+  font-family: Dosis-SemiBold;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0px 0px var(--primary-pink);
+}
+
+.custom-button {
+  width: min(30%, 80px);
+  border-radius: 0px 7px;
+  border: 1px solid var(--cotton-candy, #F7CFE5);
+  background: rgb(253, 250, 241);
+  box-shadow: 3px 3px 0px 0px var(--primary-pink);
+  font-size: min(5.5vw, 1rem);
+}
+
+/* For larger viewport window like tablets and desktop screens (not SLS preview window) */
+
+#splashScreen>svg,
+#gameIntroduction>svg,
+#gameplayInstructions>svg,
+#introductionText>svg,
+#gameEnd>svg,
+#congratulatoryMessage10>svg,
+#congratulatoryMessage11>svg,
+#congratulatoryMessage12>svg,
+#congratulatoryMessage13>svg,
+#congratulatoryMessage14>svg,
+#congratulatoryMessage15>svg,
+#congratulatoryMessage16>svg,
+#congratulatoryMessage17>svg,
+#congratulatoryMessage18>svg,
+#congratulatoryMessage19>svg,
+#congratulatoryMessage20>svg,
+#congratulatoryMessage21>svg,
+#congratulatoryMessage22>svg,
+#congratulatoryMessage23>svg,
+#congratulatoryMessage24>svg,
+#congratulatoryMessage25>svg,
+#congratulatoryMessage26>svg,
+#congratulatoryMessage27>svg,
+#congratulatoryMessage28>svg,
+#congratulatoryMessage29>svg,
+#congratulatoryMessage30>svg,
+#congratulatoryMessage31>svg,
+#congratulatoryMessage32>svg,
+#congratulatoryMessage33>svg,
+#congratulatoryMessage34>svg,
+#congratulatoryMessage35>svg,
+#congratulatoryMessage36>svg,
+#congratulatoryMessage37>svg,
+#congratulatoryMessage38>svg,
+#congratulatoryMessage39>svg,
+#congratulatoryMessage40>svg,
+#congratulatoryMessage41>svg,
+#congratulatoryMessage42>svg,
+#congratulatoryMessage43>svg,
+#congratulatoryMessage44>svg,
+#congratulatoryMessage45>svg,
+#congratulatoryMessage46>svg,
+#congratulatoryMessage47>svg,
+#congratulatoryMessage48>svg,
+#congratulatoryMessage49>svg,
+#congratulatoryMessage50>svg,
+#encouragePlayer>svg {
+
+  height: 75vh;
+  width: 80vw;
+  max-width: 591px;
+}
+
+#gameStartButton,
+#restartButton,
+#exitButton {
+  padding: 0px;
+  text-align: center;
+  display: flex !important;
+  justify-content: flex-end;
+  margin-right: 2% !important;
+  position: absolute;
+  right: 0;
+}
+
+#wrappedPanel {
+  position: relative;
+}
+
+#bottomInfo {
+  position: absolute;
+  bottom: 10%;
+  gap: 3%;
+  display: flex !important;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#timer,
+#caughtTapiocaProgressBar {
+  margin: 0 !important;
+}
+
+#caughtTapiocaProgressBar {
+  width: 75%;
+}
+
+#timer {
+  display: flex !important;
+  background: #F9E6E0;
+  height: min(2vh, 40px);
+  width: 12%;
+  max-width: 100px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  color: #FF0082;
+  border: 7.6px solid #578FFE;
+  border-bottom-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 4.5px 4.5px 1px #F47D61;
+  font-family: 'Dosis-Bold';
+  font-size: max(2.2vh, 2rem);
+  letter-spacing: 0.05em;
+  padding: 1rem 0.6rem !important;
+}
+
+.progressBarContainer {
+  position: relative;
+}
+
+#progressBar {
+  background: white;
+  display: flex;
+  position: relative;
+  height: max(2.5vh, 38px);
+  border: 2px solid #F7CFE5;
+  border-radius: 1.3125rem;
+  box-shadow: 2.5px 2.5px 1px #F47D61;
+}
+
+#progressLevel {
+  height: 100%;
+  border-radius: 1.3125rem 0 0 1.3125rem;
+  transition: all 0.1s linear 0s;
+  margin-bottom: 40px;
+  background: #578FFE;
+  position: absolute;
+}
+
+.fullbar {
+  border-radius: 1.3125rem !important;
+}
+
+#percentage {
+  display: flex;
+  margin-left: 0%;
+  transition: all 0.1s linear 0s;
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  left: 0;
+  height: 100%;
+}
+
+/* styling the progressbar thumb in SLS platform (small container) */
+#percentage>svg {
+  width: max(3.5vh, 3rem);
+  height: max(3.5vh, 3rem) height: 3.5vh;
+  position: absolute;
+}
+
+
+#timer {
+  height: 25px;
+  width: 8%;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3.6px solid #578FFE;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-shadow: 2.5px 2.5px 1px #F47D61;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  padding: 0.01rem 0.55rem !important;
+}
+
+#progressBar {
+  height: 18px;
+  border: 1px solid #F7CFE5;
+  box-shadow: 2px 2px 1px #F47D61;
+}
+
+/* styling the progressbar thumb in SLS platform (small container) */
+#percentage>svg {
+  width: 1.6rem;
+  top: -11px;
+}
+
+.star {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  top: 0px;
+  left: 0;
+  overflow: hidden;
+}
+
+.star>svg {
+  width: min(7.5vw, 1.5rem) !important;
+}
+
+.star-jump {
+  animation: 1.4s linear star-jump;
+}
+
+
+@keyframes star-jump {
+  0% {
+    top: 0px;
+    opacity: 0;
+    height: 250%;
+  }
+
+  35% {
+    height: 250%;
+  }
+
+  60% {
+    /* star will jump to the highest point */
+    top: -250%;
+    opacity: 1;
+    height: 155%;
+    transform: rotateY(0deg);
+  }
+
+  90% {
+    /* star will rotate 540deg */
+    top: -250%;
+    opacity: 1;
+    height: 155%;
+    transform: rotateY(540deg);
+  }
+
+  100% {
+    /* star will fade away */
+    top: -250%;
+    opacity: 0;
+    height: 155%;
+    transform: rotateY(540deg);
+  }
+}
+
+#copyright {
+  position: absolute;
+  bottom: 4%;
+  right: 1.5%;
+}
+
+#soundControl_Mute,
+#soundControl_Play {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  z-index: 2;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#soundControl_Mute>svg,
+#soundControl_Play>svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* SLS preview window on mobile (landscape) and above */
+@container (width > 480px) and (height=480px) {
+  @keyframes star-jump {
+    0% {
+      top: 0px;
+      opacity: 0;
+      height: 250%;
+    }
+
+    35% {
+      height: 250%;
+    }
+
+    60% {
+      /* star will jump to the highest point */
+      top: -180%;
+      opacity: 1;
+      height: 155%;
+      transform: rotateY(0deg);
+    }
+
+    90% {
+      /* star will rotate 540deg */
+      top: -180%;
+      opacity: 1;
+      height: 155%;
+      transform: rotateY(540deg);
+    }
+
+    100% {
+      /* star will fade away */
+      top: -180%;
+      opacity: 0;
+      height: 155%;
+      transform: rotateY(540deg);
+    }
+  }
+}
+
+
+
+/************ Styling for game screens that span the entire viewport and larger than SLS embedded window frame ************/
+@media only screen and (min-width: 1024px) {
+
+  .star>svg {
+    width: 3.5rem !important;
+    height: 3.5rem;
+  }
+
+  .star {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    top: 0px;
+    left: -5px;
+    overflow: hidden;
+  }
+
+  @keyframes star-jump {
+    0% {
+      top: 0px;
+      opacity: 0;
+      height: 250%;
+    }
+
+    35% {
+      height: 250%;
+    }
+
+    60% {
+      /* star will jump to the highest point */
+      top: -180%;
+      opacity: 1;
+      height: 122%;
+      transform: rotateY(0deg);
+    }
+
+    90% {
+      /* star will rotate 540deg */
+      top: -180%;
+      opacity: 1;
+      height: 122%;
+      transform: rotateY(540deg);
+    }
+
+    100% {
+      /* star will fade away */
+      top: -180%;
+      opacity: 0;
+      height: 122%;
+      transform: rotateY(540deg);
+    }
+  }
+
+  #soundControl_Mute,
+  #soundControl_Play {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #progressBar {
+    height: 30px;
+    border: 3px solid #F7CFE5;
+    box-shadow: 4px 4px 1px #F47D61;
+  }
+
+  #percentage>svg {
+    width: 2.7rem;
+    top: -2px;
+  }
+
+  #timer {
+    height: 35px;
+    width: 5.5%;
+    max-width: 75px;
+    font-weight: bold;
+    border: 5.6px solid #578FFE;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 3.5px 3.5px 1px #F47D61;
+    font-size: 1.6rem;
+    padding: 1px 0.55rem !important;
+  }
+
+
+  #bottomInfo {
+    gap: 1%;
+  }
+}
+
+/************ Removal of redundant game elements or markings appearing on EJSS simulations ************/
+[id=".myPanel"] {
+  stroke-width: 0 !important;
+}
+
+#metadata,
+[id="plottingPanel__coor__"] {
+  display: none !important;
+}
+
+/* Styles for the slide container */
+.slide-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom: -100%;
+  /* Start the element off the screen */
+  height: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 85%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  transition: bottom 1s;
+  border-top: 2px solid #ADADAD;
+  border-left: 2px solid #ADADAD;
+  border-right: 2px solid #ADADAD;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  .slide-container {
+    /* Start the element off the screen */
+    height: 110px;
+  }
+}
+
+@container sidebar (width > 10px) and (height > 10px) {
+  .slide-container {
+    height: 110px;
+  }
+}
+
+/* Styles for the slide content */
+.slide-content {
+  padding: 2.5vh 2.5vh 0 5vh;
+  text-align: center;
+  font-family: 'Dosis';
+  font-size: 3.5vw;
+}
+
+.slide-content p {
+  padding-right: 40px;
+}
+
+/* Styles for the close button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 19px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close>svg {
+  width: 20px;
+  height: 100%;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}

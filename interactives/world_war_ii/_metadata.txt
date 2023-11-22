@@ -1,0 +1,36 @@
+generated-with: Easy Java/Javascript Simulations, version 6.1 BETA, build 201115. Visit http://www.um.es/fem/Ejs
+title: World War II
+logo-image: 
+author: Soh Jun Wen
+copyright: moe
+author-image: world_war_ii/images/sjw.png
+source: world_war_ii.ejss
+main-script: world_war_ii_Simulation.js
+main-simulation: world_war_ii_Simulation.xhtml
+available-languages: 
+html-contents: world_war_ii_Contents.xhtml
+html-main: world_war_ii.xhtml
+page-title: World War II
+page-index: world_war_ii_Simulation.xhtml
+resource: world_war_ii/images/tapioca1.svg
+resource: world_war_ii/images/sjw.png
+resource: world_war_ii/images/basket.svg
+resource: world_war_ii/css/styles.css
+resource: world_war_ii/images/game.png
+resource: world_war_ii/images/EjsIcon.gif
+resource: world_war_ii/images/cc_icon.png
+resource: world_war_ii/images/Background_Growing_Food.svg
+resource: world_war_ii/images/basket.png
+resource: world_war_ii/images/EjsLogo.gif
+resource: world_war_ii/images/tapioca3.svg
+resource: world_war_ii/images/EjsMainIcon.gif
+resource: world_war_ii/images/tapioca2.svg
+resource: world_war_ii/images/introduction.png
+resource: world_war_ii/images/Gyroscope.gif
+resource: world_war_ii/images/tapioca4.svg
+resource: world_war_ii/audio/wwii-background-music.mp3
+resource: world_war_ii/audio/144319__fumiya112__decide-trimmed.mp3
+resource: world_war_ii/audio/tapioca-caught-in-bucket-sound.mp3
+resource: world_war_ii/fonts/Dosis-Regular.woff2
+resource: world_war_ii/fonts/Dosis-SemiBold.woff2
+resource: world_war_ii/fonts/Dosis-Bold.woff2
