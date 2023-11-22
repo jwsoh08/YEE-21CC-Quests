@@ -1,0 +1,660 @@
+﻿/************ Terminologies ************/
+/* SLS - Student Learning Platform */
+
+/* THE NEW START OF CSS FRAMEWORK FOR SLS INTERACTIVES USING EJSS */
+/* CSS styling follows a SLS platform small preview window first design */
+
+/************ fonts ************/
+@font-face {
+	font-family: "Dosis";
+	src: url("../fonts/Dosis-Regular.woff2");
+}
+
+@font-face {
+	font-family: "Dosis-Bold";
+	src: url("../fonts/Dosis-Bold.woff2");
+}
+
+@font-face {
+	font-family: "Dosis-SemiBold";
+	src: url("../fonts/Dosis-SemiBold.woff2");
+}
+
+/************ SLS interactive color palettes ************/
+:root {
+	--primary-pink: #ff0082;
+	--primary-blue: #578ffe;
+	--cornflower: #9fb9f9;
+	--cotton-candy: #f7cfe5;
+	--apricot: #f9e6e0;
+	--rose: #ee72b1;
+	--orange: #f47d61;
+	--yellow: #ffd208;
+	--offwhite: #fdfaf1;
+	--white: #ffffff;
+}
+
+.font-color-pp {
+	color: var(--primary-pink);
+}
+
+.font-color-pb {
+	color: var(--primary-blue);
+}
+
+.bg-apricot {
+	background-color: var(--apricot);
+}
+
+.bg-offwhite {
+	background-color: var(--offwhite);
+}
+
+.bg-white {
+	background-color: var(--white);
+}
+
+.bg-yellow {
+	background-color: var(--yellow);
+}
+
+.border-yellow {
+	border-color: var(--yellow);
+}
+
+.border-offwhite {
+	border-color: var(--offwhite);
+}
+
+.border-cottoncandy {
+	border-color: var(--cotton-candy);
+}
+
+.modal-boxshadow-orange {
+	box-shadow: 5px 5px 1px var(--orange);
+}
+
+.modal-boxshadow-primarypink {
+	box-shadow: 5px 5px 1px var(--primary-pink);
+}
+
+.pbar-boxshadow-primarypink {
+	box-shadow: 2px 2px 1px var(--primary-pink);
+}
+
+.btn-boxshadow-pp {
+	box-shadow: 1.5px 1.5px 1px var(--primary-pink);
+}
+
+/************ Layout ************/
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+}
+
+/* main container for game content */
+#_topFrame {
+	container-type: inline-size !important;
+	/* Vertically centers the game content */
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+}
+
+#wrappedPanel,
+#plottingPanel {
+	height: 100%;
+}
+
+#\.myPanel {
+	fill: transparent;
+}
+
+#background {
+	height: 100%;
+}
+
+/************ Stardard Components :start ************/
+/* Modals */
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	/* z-index: -1; */
+}
+
+.modal {
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3rem;
+	padding: 2.5rem !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 520px;
+	max-height: 520px;
+	height: 42vw;
+	width: 42vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 14%;
+	z-index: 2;
+}
+
+.modal-title {
+	font-family: "Dosis-Bold";
+	font-size: 1.25rem;
+}
+
+.modal-body {
+	font-family: "Dosis-SemiBold";
+	font-size: 1rem;
+}
+
+.modal-btn {
+	padding: 0.25rem 0;
+	width: 4.4rem;
+	border-radius: 0 0.5rem 0 0.5rem;
+	font-family: "Dosis-Bold";
+	font-size: 1rem;
+	justify-content: center;
+	align-items: center;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.font-lg {
+	font-size: 1.25rem; /*same size as modal-title */
+}
+
+/* for the confetti */
+.modal-tl {
+	width: 2.5rem;
+	max-width: 100px;
+	position: absolute;
+	top: 3px;
+	left: 12%;
+}
+
+.modal-br {
+	width: 3rem;
+	max-width: 100px;
+	position: absolute;
+	bottom: 18px;
+	right: 5%;
+}
+
+.modal-tl > svg,
+.modal-tl > img,
+.modal-br > svg,
+.modal-br > img {
+	width: 100%;
+	height: 100%;
+}
+
+/* cutomised modals for answer options just for this game */
+.modal-option-all {
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3vh;
+	position: absolute;
+	top: 50%;
+	left: 18%;
+	transform: translate(-50%, -50%);
+	max-width: 580px;
+	max-height: 418px;
+	height: 10%;
+	width: 30%;
+	font-family: "Dosis-SemiBold" !important;
+	font-size: 1rem; /*same size as modal-body */
+	padding: 0.5rem !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+#questionModal {
+	top: 12%;
+	max-width: 100vw;
+	height: 15%;
+	width: 85%;
+	font-family: "Dosis-SemiBold" !important;
+	padding: 2rem !important;
+}
+
+#gpInstructionsModal {
+	height: 53vw;
+	padding: 1.3rem !important;
+	gap: 7%;
+}
+
+/************ Progress bars ************/
+
+#progressBarContainer {
+	border-style: solid;
+	border-width: 2.5px;
+	border-radius: 3rem;
+	position: absolute;
+	bottom: 6%;
+	left: 10%;
+	width: 80vw;
+	max-width: 1600px;
+}
+
+#progressBar {
+	background: var(--apricot);
+	display: flex;
+	position: relative;
+	height: 4vh;
+	border-radius: 3rem;
+	width: 80vw;
+}
+
+#progressLevel {
+	background: var(--cornflower);
+	height: 100%;
+	border-radius: 3rem;
+	transition: all 0.1s linear 0s;
+	margin-bottom: 40px;
+	position: absolute;
+	border-color: var(--cornflower);
+	border-style: solid;
+	border-width: 1px;
+	left: -1px;
+	top: -1px;
+}
+
+.emptybar {
+	border: 0;
+}
+
+.fullbar {
+	border-radius: 3rem;
+}
+
+.divider {
+	width: 25%;
+	/* position: absolute; */
+}
+
+.divider + img {
+	position: absolute;
+	top: -0.9vh;
+	/* right: 25%; */
+	height: 6.5vh;
+}
+
+#firstDividerImg {
+	right: 73%;
+}
+
+#secondDividerImg {
+	right: 48%;
+}
+
+#thirdDividerImg {
+	right: 23%;
+}
+
+/************ Removal of redundant game elements or markings appearing on EJSS simulations ************/
+[id=".myPanel"] {
+	stroke-width: 0;
+}
+
+#metadata,
+[id="plottingPanel__coor__"] {
+	display: none;
+}
+
+/************ Stardard Components :end ************/
+/************ customised CSS: start *************/
+/************ Write your customised CSS for other html elements here for SLS small screen frame size ************/
+#gameStart,
+#gameIntroduction,
+#gameplayInstructions,
+#moreInfo1Modal,
+#moreInfo2Modal,
+#moreInfo3Modal,
+#moreInfo4Modal,
+#gameEnd {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100vw;
+	height: 100vh;
+	width: 100vw;
+	gap: 11%;
+}
+
+#gameScreen {
+	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.hasBackgroundCoverImage {
+	width: 100%;
+	background-image: url("../images/quest5_cover.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.hasBackgroundImage {
+	width: 100%;
+	background-image: url("../images/background.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#startBtn {
+	width: 10vw;
+	height: auto;
+	min-width: 100px;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#startBtn > svg {
+	width: 100%;
+	height: auto;
+}
+
+#wrappedPanel {
+	position: relative;
+}
+
+#invisibleDragger {
+	opacity: 0;
+}
+
+.soundControlIcon {
+	position: absolute;
+	top: 3%;
+	left: 3%;
+	z-index: 2;
+}
+
+#gameIntroduction > svg,
+#gameplayInstructions > svg,
+#moreInfo1Modal > svg,
+#moreInfo2Modal > svg,
+#moreInfo3Modal > svg,
+#moreInfo4Modal > svg,
+#gameEnd > svg {
+	height: 75vh;
+	width: 80vw;
+	max-width: 591px;
+}
+
+#option1:hover, #option2:hover, #option3:hover, #option4:hover {
+	cursor: pointer;
+}
+
+/************ Styling for various device screen sizes ************/
+
+/* portrait mode happens for small screen sizes in SLS */
+@media screen and (orientation: portrait) {
+	html {
+		font-size: 24px;
+	}
+
+	.hasBackgroundCoverImage {
+		width: 100%;
+		background-image: url("../images/quest5_cover_portrait.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	#startBtn {
+		min-width: 18%;
+	}
+
+	.hasBackgroundImage {
+		width: 100%;
+		background-image: url("../images/quest5_background_portrait.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	#wrappedPanel {
+		height: 50%;
+		top: 22%;
+	}
+
+	#soundControlPlay > svg,
+	#soundControlMute > svg {
+		width: 5vw;
+		height: 5vw;
+		top: 2%;
+		left: 2%;
+	}
+}
+
+@container (width > 768px) and (width < 1200px) {
+	.modal-title {
+		font-size: 1.75rem;
+	}
+
+	.modal-body {
+		font-size: 1.4rem;
+	}
+
+	.modal-btn {
+		/* padding: 0.5rem 0; */
+		/* width: 7.6rem; */
+		/* border-radius: 0 1rem 0 1rem; */
+		font-size: 1.4rem;
+		/* border-width: 2px; */
+	}
+
+	/* .modal-tall { */
+	/* padding: 2.5rem 4.4rem; */
+	/* max-height: 100vh !important; */
+	/* max-width: 580px; */
+	/* height: 53%; */
+	/* width: 35vw;
+		height: 35vw; */
+	/* gap: 14%; */
+	/* } */
+
+	.modal-option-all {
+		font-size: 1.4rem;
+	}
+
+	#questionModal {
+		font-size: 1.4rem;
+	}
+
+	.font-lg {
+		font-size: 1.75rem;
+	}
+
+	.modal-boxshadow-orange {
+		box-shadow: 9px 9px 1px var(--orange);
+	}
+
+	.modal-tl {
+		width: 5rem;
+		max-width: 100px;
+	}
+
+	.modal-br {
+		width: 7.5rem;
+		max-width: 128px;
+	}
+
+	#progressBarContainer {
+		border-width: 4px;
+	}
+
+	.pbar-boxshadow-primarypink {
+		box-shadow: 5px 5px 1px var(--primary-pink);
+	}
+
+	.btn-boxshadow-pp {
+		box-shadow: 2.5px 2.5px 1px var(--primary-pink);
+	}
+
+	/* .divider > img {
+		height: 4.4rem;
+	} */
+}
+
+@container (min-width: 1200px) {
+	.modal {
+		border-radius: 5.5rem;
+		padding: 2.5rem 5.4rem !important;
+	}
+
+	.modal-title {
+		font-size: 2.5rem;
+	}
+
+	.modal-body {
+		font-size: 2rem;
+	}
+
+	.modal-btn {
+		padding: 0.5rem 0;
+		width: 7.6rem;
+		border-radius: 0 1rem 0 1rem;
+		font-size: 1.5rem;
+		border-width: 2px;
+	}
+
+	/* .modal-tall { */
+	/* padding: 2.5rem 4.4rem; */
+	/* max-height: 100vh !important; */
+	/* max-width: 580px; */
+	/* height: 53%; */
+	/* width: 35vw;
+		height: 35vw; */
+	/* gap: 14%; */
+	/* } */
+
+	.modal-option-all {
+		font-size: 2rem;
+	}
+
+	#questionModal {
+		font-size: 2rem;
+	}
+
+	.font-lg {
+		font-size: 2.5rem;
+	}
+
+	.modal-boxshadow-orange {
+		box-shadow: 9px 9px 1px var(--orange);
+	}
+
+	.modal-tl {
+		width: 5rem;
+		max-width: 100px;
+	}
+
+	.modal-br {
+		width: 7.5rem;
+		max-width: 128px;
+	}
+
+	#progressBarContainer {
+		border-width: 4px;
+	}
+
+	.pbar-boxshadow-primarypink {
+		box-shadow: 5px 5px 1px var(--primary-pink);
+	}
+
+	.btn-boxshadow-pp {
+		box-shadow: 2.5px 2.5px 1px var(--primary-pink);
+	}
+
+	/* .divider > img {
+		height: 4.4rem;
+	} */
+}
+
+/* Styles for the slide container */
+.slide-container {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	bottom: -100%;
+	/* Start the element off the screen */
+	/* height: 208px; */
+	height: 148px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: white;
+	width: 85%;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+	overflow: hidden;
+	transition: bottom 1s;
+	border-top: 5px solid #adadad;
+	border-left: 5px solid #adadad;
+	border-right: 5px solid #adadad;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Styles for the slide content */
+.slide-content {
+	/* padding: 35px 25px 0 60px; */
+	padding: 20px 20px 15px 20px;
+	text-align: center;
+	font-family: "Dosis";
+	font-size: 35px;
+}
+
+.slide-content p {
+	/* padding-right: 80px; */
+	margin-top: -20px;
+}
+
+/* Styles for the close button */
+.close {
+	color: #aaa;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+	height: 40px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.close > svg {
+	width: 40px;
+	height: 100%;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+}
+
+/************ customised CSS: end *************/

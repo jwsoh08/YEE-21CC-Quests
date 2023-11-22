@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+<ModulePrefs
+title="guarding_your_garden"
+author="Jun Wen (junwen.soh@theoptimum.net)"
+description="This simulation has been modified from the online version of "grammer zombie" game.
+
+Game Title: SLS Hackathon by Crest Secondary and Woodlands Secondary Grammar Zombie Game
+https://iwant2study.org/ospsg/index.php/interactive-resources/english/869-zoombiegrammargameprojectgd"
+screenshot="./guarding_your_garden/images/garden-logo.png"
+thumbnail="./guarding_your_garden/images/garden-logo.png">
+<Require feature="opensocial-0.9"/>
+<Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html" href="guarding_your_garden_Simulation.xhtml"/>
+</Module>

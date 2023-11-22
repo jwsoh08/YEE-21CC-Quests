@@ -1,0 +1,52 @@
+generated-with: Easy Java/Javascript Simulations, version 6.1 BETA, build 201115. Visit http://www.um.es/fem/Ejs
+title: Knowing Your Neighbourhood
+logo-image: guarding_your_garden/images/garden-logo.png
+author: Jun Wen (junwen.soh@theoptimum.net)
+copyright: moe
+author-image: guarding_your_garden/images/A.png
+source: guarding_your_garden.ejss
+main-script: guarding_your_garden_Simulation.js
+main-simulation: guarding_your_garden_Simulation.xhtml
+available-languages: 
+html-contents: guarding_your_garden_Contents.xhtml
+html-main: guarding_your_garden.xhtml
+page-title: Knowing Your Neighbourhood
+page-index: guarding_your_garden_Simulation.xhtml
+resource: guarding_your_garden/audio/spraySound.wav
+resource: guarding_your_garden/images/cockroach.svg
+resource: guarding_your_garden/images/spray.png
+resource: guarding_your_garden/images/tryAgain.svg
+resource: guarding_your_garden/images/sprayBullet.png
+resource: guarding_your_garden/css/ejsGroupPage.css
+resource: guarding_your_garden/css/ejsContentsTop.css
+resource: guarding_your_garden/css/ejsContentsLeft.css
+resource: guarding_your_garden/css/ejss.css
+resource: guarding_your_garden/images/background.svg
+resource: guarding_your_garden/images/garden-logo.png
+resource: guarding_your_garden/images/mosquito.svg
+resource: guarding_your_garden/images/quest5_background_portrait.svg
+resource: guarding_your_garden/images/EjsIcon.gif
+resource: guarding_your_garden/images/cc_icon.png
+resource: guarding_your_garden/images/rat.svg
+resource: guarding_your_garden/images/quest5_cover_portrait.svg
+resource: guarding_your_garden/images/org/opensourcephysics/resources/controls/images/reset.gif
+resource: guarding_your_garden/images/progress-checkmark.svg
+resource: guarding_your_garden/images/quest5_cover.png
+resource: guarding_your_garden/images/sprayCan.svg
+resource: guarding_your_garden/images/logo.png
+resource: guarding_your_garden/images/EjsLogo.gif
+resource: guarding_your_garden/images/lizard.svg
+resource: guarding_your_garden/images/A.png
+resource: guarding_your_garden/images/EjsMainIcon.gif
+resource: guarding_your_garden/images/syringe.png
+resource: guarding_your_garden/images/startBtn.svg
+resource: guarding_your_garden/images/Gyroscope.gif
+resource: guarding_your_garden/html/EjsLauncher.html
+resource: guarding_your_garden/audio/wrongSound.wav
+resource: guarding_your_garden/audio/backgroundLoop.mp3
+resource: guarding_your_garden/audio/correctSound.wav
+resource: guarding_your_garden/scripts/common_script.js
+resource: guarding_your_garden/scripts/textresizedetector.js
+resource: guarding_your_garden/fonts/Dosis-Regular.woff2
+resource: guarding_your_garden/fonts/Dosis-SemiBold.woff2
+resource: guarding_your_garden/fonts/Dosis-Bold.woff2
