@@ -1,6 +1,6 @@
 header {
     position: relative;
-    height: 32%;
+    height: 40%;
     width: 100%;
     isolation: isolate;
 }
@@ -27,7 +27,7 @@ h1 {
     position: relative;
 }
 
-.hero::after {
+/* .hero::after {
     content: '';
     width: 100%;
     display: block;
@@ -35,7 +35,7 @@ h1 {
     position: absolute;
     top: 0;
     background: rgba(0, 0, 0, 0.3);
-}
+} */
 
 main {
     padding-bottom: 35px;
